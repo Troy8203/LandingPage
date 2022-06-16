@@ -1,0 +1,119 @@
+:root {
+    /** Colors Primary */
+    --primaryMain: #2196F3;
+    --primaryLight: #BBDEFB;
+    --primaryDark: #0D47A1;
+    /** Colors Secondary */
+    --secondaryMain: #00BCD4;
+    --secondaryLight: #B2EBF2;
+    --secondaryDark: #006064;
+    /** Colors Accent */
+    --accentMain: #651FFF;
+    --accentLight: #EDE7F6;
+    --accentDark: #4527A0;
+    /** Colors Paper */
+    --paperLight: #FFFFFF;
+    --paperDark: #424242;
+    --defaultDark: #303030;
+    --defaultLight: #DEDEDE;
+    /** Colors Text */
+    --textPrimary: #00000087;
+    --textSecondary: #00000054;
+    --textSecondaryDark: #DEDEDE;
+    --textDisable: #00000038;
+    --textField: #00000042;
+}
+
+/*? Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--paperLight);
+    color: var(--textPrimary);
+    align-items: center;
+}
+
+header {
+    background: rgba(0, 0, 0, .1);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-header {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-header > img {
+    width: 250px;
+    height: auto;
+    padding: .7rem;
+}
+
+.nav-header {
+    flex-grow: 1;
+}
+
+.nav-header > ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.nav-header > ul > li {
+    list-style-type: none;
+}
+
+.nav-header > ul > li > a {
+    color: var(--textPrimary);
+    text-decoration: none;
+}
+
+.nav-header > ul > li > a:hover {
+    text-decoration: underline solid 2px;
+    text-decoration-color: var(--primaryMain);
+    color: var(--primaryMain);
+}
+
+/*? RESPONSIVE
+/** Tamaño tablet horizontal (1024-768) */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    /* body {
+        background-color: red;
+    } */
+}
+
+/** Tamaño tablet (768-480) */
+@media all and (min-width: 480px) and (max-width: 768px) {
+    /* body {
+        background-color: blue;
+    } */
+}
+
+/** Tamaño teléfonos (480-menos ) */
+@media all and (max-width: 480px) {
+    /* body {
+        background-color: green;
+    } */
+
+    .container-header {
+        width: 100%;
+        flex-flow: column nowrap;
+    }
+
+    .nav-header {
+        width: 100%;
+    }
+
+    .nav-header > ul {
+        display: block;
+    }
+}
