@@ -1,0 +1,30 @@
+.main-banner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-banner {
+    width: 30rem;
+    height: auto;
+}
+
+.container-btn {
+    padding: 1.5rem 0;
+}
+
+.btn-banner {
+    padding: .7rem 3.5rem;
+    border: 1px solid #00BCD4;
+    border-radius: .25rem;
+
+    color: #00BCD4;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-banner:hover {
+    color: var(--paperLight);
+    background-color: #00BCD4;
+}
