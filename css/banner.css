@@ -28,3 +28,20 @@
     color: var(--paperLight);
     background-color: #00BCD4;
 }
+
+/*? RESPONSIVE
+
+/** Tamaño teléfonos (480-menos ) */
+@media all and (max-width: 480px) {
+    /* body {
+        background-color: green;
+    }  */
+
+    .banner-text {
+        padding: 0 4rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
