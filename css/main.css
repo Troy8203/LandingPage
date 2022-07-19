@@ -48,3 +48,11 @@ header {
     justify-content: center;
 }
 
+.graphic-article {
+    width: 30rem;
+    height: 30rem;
+    background: #14141420;
+    background-image: url(/img/rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
