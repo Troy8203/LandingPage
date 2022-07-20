@@ -33,7 +33,7 @@ body {
     color: var(--textPrimary);
     align-items: center;
 
-    background-image: url(/img/blob-scatter-haikei.svg);
+    background-image: url(../img/blob-scatter-haikei.svg);
     background-repeat: no-repeat;
     background-position: 100% 0%;
     background-size: 85rem auto;
